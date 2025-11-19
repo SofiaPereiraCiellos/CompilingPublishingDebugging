@@ -1,5 +1,20 @@
 {
     "version": "0.2.0",
     "configurations": [
+         {
+            "name": "CompilationPublishingDebugging",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "MCP",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "ExcludeTry",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "d676b6c1-bf62-47d7-93b1-82df3e929cd0",
+            "schemaUpdateMode": "ForceSync",
+        }
     ]
 }

@@ -12,6 +12,7 @@
   "logo": "",
   "dependencies": [],
   "screenshots": [],
+  "runtime": "16.0",
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [
