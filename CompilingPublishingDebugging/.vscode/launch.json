@@ -2,14 +2,15 @@
     "version": "0.2.0",
     "configurations": [
          {
-            "name": "CompilationPublishingDebugging",
+            "name": "TEST",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "MCP",
+            "environmentName": "TEST",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "ExcludeTry",
+            "breakOnRecordWrite": "ExcludeTemporary",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
