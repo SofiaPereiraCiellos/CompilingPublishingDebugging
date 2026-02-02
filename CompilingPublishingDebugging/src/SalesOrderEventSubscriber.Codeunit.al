@@ -31,6 +31,6 @@ codeunit 80101 "Sales Order Event Subscriber"
 
     local procedure SimulateLongRunningProcess()
     begin
-        Sleep(100000);
+        Sleep(50000);
     end;
 }
