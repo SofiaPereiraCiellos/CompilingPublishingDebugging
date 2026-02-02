@@ -22,4 +22,15 @@ codeunit 80101 "Sales Order Event Subscriber"
                     Rec.Quantity, Item.Inventory, Rec."No.");
         end;
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post (Yes/No)", OnAfterConfirmPost, '', false, false)]
+    local procedure SalesPostYesNo_OnAfterConfirmPost()
+    begin
+        SimulateLongRunningProcess();
+    end;
+
+    local procedure SimulateLongRunningProcess()
+    begin
+        Sleep(100000);
+    end;
 }

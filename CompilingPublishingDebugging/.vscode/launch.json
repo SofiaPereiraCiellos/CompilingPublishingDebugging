@@ -2,6 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "snapshotInitialize: Microsoft production cloud",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "production",
+            "tenant": "d676b6c1-bf62-47d7-93b1-82df3e929cd0",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile",
+            "profilingType": "Instrumentation"
+        },
+        {
             "name": "Attach: Microsoft cloud sandbox",
             "type": "al",
             "request": "attach",
@@ -16,11 +27,11 @@
             "breakOnNext": "WebServiceClient"
         },
         {
-            "name": "TEST",
+            "name": "ES",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "TEST",
+            "environmentName": "ES",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": "ExcludeTry",
@@ -30,6 +41,33 @@
             "enableSqlInformationDebugger": true,
             "tenant": "d676b6c1-bf62-47d7-93b1-82df3e929cd0",
             "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "Production",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Production",
+            "environmentName": "Production",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "ExcludeTry",
+            "breakOnRecordWrite": "ExcludeTemporary",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "d676b6c1-bf62-47d7-93b1-82df3e929cd0",
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "AL: Generated Snapshot request",
+            "request": "snapshotInitialize",
+            "type": "al",
+            "environmentType": "Production",
+            "environmentName": "Production",
+            "sessionId": 11748,
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile",
+            "tenant": "d676b6c1-bf62-47d7-93b1-82df3e929cd0"
         }
     ]
 }
